@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="aut_id" />
+    </Key>
+    <Property Name="aut_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aut_nombre" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cat_nombre" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Editorial">
+    <Key>
+      <PropertyRef Name="edi_id" />
+    </Key>
+    <Property Name="edi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="edi_nombre" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Libro">
+    <Key>
+      <PropertyRef Name="lib_id" />
+    </Key>
+    <Property Name="lib_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lib_nombre" Type="varchar" MaxLength="100" />
+    <Property Name="lib_disponible" Type="bit" />
+    <Property Name="cat_id" Type="int" />
+    <Property Name="edi_id" Type="int" />
+    <Property Name="aut_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Prestamo_Libro">
+    <Key>
+      <PropertyRef Name="pre_id" />
+    </Key>
+    <Property Name="pre_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pre_fecha_inicio" Type="date" />
+    <Property Name="pre_fecha_final" Type="date" />
+    <Property Name="lib_id" Type="int" />
+    <Property Name="usu_cedula" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="usu_cedula" />
+    </Key>
+    <Property Name="usu_cedula" Type="int" Nullable="false" />
+    <Property Name="usu_nombre" Type="varchar" MaxLength="50" />
+    <Property Name="usu_apellido" Type="varchar" MaxLength="50" />
+    <Property Name="usu_usuario" Type="varchar" MaxLength="100" />
+    <Property Name="usu_contrasenia" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK__Libro__aut_id__5165187F">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="aut_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="aut_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Libro__cat_id__4F7CD00D">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="cat_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Libro__edi_id__5070F446">
+    <End Role="Editorial" Type="Self.Editorial" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Editorial">
+        <PropertyRef Name="edi_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="edi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prestamo___lib_i__5629CD9C">
+    <End Role="Libro" Type="Self.Libro" Multiplicity="0..1" />
+    <End Role="Prestamo_Libro" Type="Self.Prestamo_Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Libro">
+        <PropertyRef Name="lib_id" />
+      </Principal>
+      <Dependent Role="Prestamo_Libro">
+        <PropertyRef Name="lib_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prestamo___usu_c__571DF1D5">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Prestamo_Libro" Type="Self.Prestamo_Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="usu_cedula" />
+      </Principal>
+      <Dependent Role="Prestamo_Libro">
+        <PropertyRef Name="usu_cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoDBModelStoreContainer">
+    <EntitySet Name="Autor" EntityType="Self.Autor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Editorial" EntityType="Self.Editorial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Libro" EntityType="Self.Libro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Prestamo_Libro" EntityType="Self.Prestamo_Libro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Libro__aut_id__5165187F" Association="Self.FK__Libro__aut_id__5165187F">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Libro__cat_id__4F7CD00D" Association="Self.FK__Libro__cat_id__4F7CD00D">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Libro__edi_id__5070F446" Association="Self.FK__Libro__edi_id__5070F446">
+      <End Role="Editorial" EntitySet="Editorial" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prestamo___lib_i__5629CD9C" Association="Self.FK__Prestamo___lib_i__5629CD9C">
+      <End Role="Libro" EntitySet="Libro" />
+      <End Role="Prestamo_Libro" EntitySet="Prestamo_Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prestamo___usu_c__571DF1D5" Association="Self.FK__Prestamo___usu_c__571DF1D5">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Prestamo_Libro" EntitySet="Prestamo_Libro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

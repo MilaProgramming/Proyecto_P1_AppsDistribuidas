@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="aut_id" />
+    </Key>
+    <Property Name="aut_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="aut_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Libro" Relationship="Self.FK__Libro__aut_id__5165187F" FromRole="Autor" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cat_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Libro" Relationship="Self.FK__Libro__cat_id__4F7CD00D" FromRole="Categoria" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="Editorial">
+    <Key>
+      <PropertyRef Name="edi_id" />
+    </Key>
+    <Property Name="edi_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="edi_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Libro" Relationship="Self.FK__Libro__edi_id__5070F446" FromRole="Editorial" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="Libro">
+    <Key>
+      <PropertyRef Name="lib_id" />
+    </Key>
+    <Property Name="lib_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lib_nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="lib_disponible" Type="Boolean" />
+    <Property Name="cat_id" Type="Int32" />
+    <Property Name="edi_id" Type="Int32" />
+    <Property Name="aut_id" Type="Int32" />
+    <NavigationProperty Name="Autor" Relationship="Self.FK__Libro__aut_id__5165187F" FromRole="Libro" ToRole="Autor" />
+    <NavigationProperty Name="Categoria" Relationship="Self.FK__Libro__cat_id__4F7CD00D" FromRole="Libro" ToRole="Categoria" />
+    <NavigationProperty Name="Editorial" Relationship="Self.FK__Libro__edi_id__5070F446" FromRole="Libro" ToRole="Editorial" />
+    <NavigationProperty Name="Prestamo_Libro" Relationship="Self.FK__Prestamo___lib_i__5629CD9C" FromRole="Libro" ToRole="Prestamo_Libro" />
+  </EntityType>
+  <EntityType Name="Prestamo_Libro">
+    <Key>
+      <PropertyRef Name="pre_id" />
+    </Key>
+    <Property Name="pre_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pre_fecha_inicio" Type="DateTime" Precision="0" />
+    <Property Name="pre_fecha_final" Type="DateTime" Precision="0" />
+    <Property Name="lib_id" Type="Int32" />
+    <Property Name="usu_cedula" Type="Int32" />
+    <NavigationProperty Name="Libro" Relationship="Self.FK__Prestamo___lib_i__5629CD9C" FromRole="Prestamo_Libro" ToRole="Libro" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Prestamo___usu_c__571DF1D5" FromRole="Prestamo_Libro" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="usu_cedula" />
+    </Key>
+    <Property Name="usu_cedula" Type="Int32" Nullable="false" />
+    <Property Name="usu_nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usu_apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Prestamo_Libro" Relationship="Self.FK__Prestamo___usu_c__571DF1D5" FromRole="Usuario" ToRole="Prestamo_Libro" />
+    <Property Name="usu_usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usu_contrasenia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Libro__aut_id__5165187F">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="aut_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="aut_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Libro__cat_id__4F7CD00D">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="cat_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Libro__edi_id__5070F446">
+    <End Role="Editorial" Type="Self.Editorial" Multiplicity="0..1" />
+    <End Role="Libro" Type="Self.Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Editorial">
+        <PropertyRef Name="edi_id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="edi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prestamo___lib_i__5629CD9C">
+    <End Role="Libro" Type="Self.Libro" Multiplicity="0..1" />
+    <End Role="Prestamo_Libro" Type="Self.Prestamo_Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Libro">
+        <PropertyRef Name="lib_id" />
+      </Principal>
+      <Dependent Role="Prestamo_Libro">
+        <PropertyRef Name="lib_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prestamo___usu_c__571DF1D5">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Prestamo_Libro" Type="Self.Prestamo_Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="usu_cedula" />
+      </Principal>
+      <Dependent Role="Prestamo_Libro">
+        <PropertyRef Name="usu_cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Autor" EntityType="Self.Autor" />
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" />
+    <EntitySet Name="Editorial" EntityType="Self.Editorial" />
+    <EntitySet Name="Libro" EntityType="Self.Libro" />
+    <EntitySet Name="Prestamo_Libro" EntityType="Self.Prestamo_Libro" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK__Libro__aut_id__5165187F" Association="Self.FK__Libro__aut_id__5165187F">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Libro__cat_id__4F7CD00D" Association="Self.FK__Libro__cat_id__4F7CD00D">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Libro__edi_id__5070F446" Association="Self.FK__Libro__edi_id__5070F446">
+      <End Role="Editorial" EntitySet="Editorial" />
+      <End Role="Libro" EntitySet="Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prestamo___lib_i__5629CD9C" Association="Self.FK__Prestamo___lib_i__5629CD9C">
+      <End Role="Libro" EntitySet="Libro" />
+      <End Role="Prestamo_Libro" EntitySet="Prestamo_Libro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prestamo___usu_c__571DF1D5" Association="Self.FK__Prestamo___usu_c__571DF1D5">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Prestamo_Libro" EntitySet="Prestamo_Libro" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
