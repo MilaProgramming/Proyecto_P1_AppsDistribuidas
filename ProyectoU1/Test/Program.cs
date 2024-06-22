@@ -11,11 +11,11 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Funciona la wea");
-            //AddAutor();
             AddCategoria();
             AddEditorial();
             AddUsuario();
+            Console.WriteLine("Funciona la wea");
+            //AddAutor();
         }
 
         static void AddAutor()

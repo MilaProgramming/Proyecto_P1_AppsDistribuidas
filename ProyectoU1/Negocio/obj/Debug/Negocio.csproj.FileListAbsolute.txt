@@ -10,3 +10,15 @@ C:\Users\dylan\source\repos\ProyectoU1\Negocio\obj\Debug\Negocio.csproj.CoreComp
 C:\Users\dylan\source\repos\ProyectoU1\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\dylan\source\repos\ProyectoU1\Negocio\obj\Debug\Negocio.dll
 C:\Users\dylan\source\repos\ProyectoU1\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\Data.dll
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\Data.pdb
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\Data.dll.config
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Negocio\obj\Debug\Negocio.pdb

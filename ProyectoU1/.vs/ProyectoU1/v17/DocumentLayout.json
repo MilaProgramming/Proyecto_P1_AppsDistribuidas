@@ -1,122 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0A1C458-D195-4258-9C36-4EF614790AA8}|Presentation\\Presentation.csproj|c:\\users\\usuario\\desktop\\proyecto_p1_appsdistribuidas\\proyectou1\\presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0A1C458-D195-4258-9C36-4EF614790AA8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\servicio\\controllers\\editorialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\controllers\\editorialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\negocio\\lprestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\lprestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\negocio\\lcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\lcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\negocio\\lusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\lusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\negocio\\leditorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\leditorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\negocio\\llibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\llibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|c:\\users\\dylan\\source\\repos\\proyectou1\\negocio\\lautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B2E399-1785-42F7-94F0-3F36DD31E9C7}|Negocio\\Negocio.csproj|solutionrelative:negocio\\lautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\servicio\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\servicio\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{724CD4E7-81EC-488D-849C-C70D87FAB392}|Servicio\\Servicio.csproj|solutionrelative:servicio\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\frepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\frepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|c:\\users\\usuario\\desktop\\proyecto_p1_appsdistribuidas\\proyectou1\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\test\\content\\net40\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3D03D890-A7CB-44DF-A725-4081E56B2BEE}|Test\\Test.csproj|solutionrelative:test\\content\\net40\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\repositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\repositoryfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\content\\net40\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\content\\net40\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|C:\\Users\\dylan\\source\\repos\\ProyectoU1\\data\\editorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\editorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|c:\\users\\usuario\\desktop\\proyecto_p1_appsdistribuidas\\proyectou1\\data\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6A5479-E653-492D-8EF9-D3AE1C9C0604}|Data\\Data.csproj|solutionrelative:data\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,386 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Model1.edmx",
-              "RelativeDocumentMoniker": "Data\\Model1.edmx",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Data\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-06-15T17:04:15.267Z",
-              "EditorCaption": " [Diagram1]"
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Presentation\\Form1.cs",
+              "RelativeDocumentMoniker": "Presentation\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Presentation\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentation\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T20:58:40.485Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Categoria.cs",
-              "RelativeDocumentMoniker": "Data\\Categoria.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Categoria.cs",
-              "RelativeToolTip": "Data\\Categoria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "Test\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Test\\Program.cs",
+              "RelativeToolTip": "Test\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:06:14.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Autor.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Autor.cs",
-              "RelativeDocumentMoniker": "Data\\Autor.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Autor.cs",
-              "RelativeToolTip": "Data\\Autor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:06:11.238Z",
+              "WhenOpened": "2024-06-22T20:37:55.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LibroController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\LibroController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\LibroController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\LibroController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\LibroController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Title": "Autor.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Data\\Autor.cs",
+              "RelativeDocumentMoniker": "Data\\Autor.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto_P1_AppsDistribuidas\\ProyectoU1\\Data\\Autor.cs",
+              "RelativeToolTip": "Data\\Autor.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:03:18.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PrestamoController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\PrestamoController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\PrestamoController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\PrestamoController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\PrestamoController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T01:02:02.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:51:52.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutorController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\AutorController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\AutorController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\AutorController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\AutorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:28:10.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\CategoriaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T23:02:38.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditorialController.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\EditorialController.cs",
-              "RelativeDocumentMoniker": "Servicio\\Controllers\\EditorialController.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Controllers\\EditorialController.cs",
-              "RelativeToolTip": "Servicio\\Controllers\\EditorialController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:43:15.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LCategoria.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LCategoria.cs",
-              "RelativeDocumentMoniker": "Negocio\\LCategoria.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LCategoria.cs",
-              "RelativeToolTip": "Negocio\\LCategoria.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAYwC0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:05:24.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LUsuario.cs",
-              "RelativeDocumentMoniker": "Negocio\\LUsuario.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LUsuario.cs",
-              "RelativeToolTip": "Negocio\\LUsuario.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAuwDUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:06:02.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LPrestamo.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LPrestamo.cs",
-              "RelativeDocumentMoniker": "Negocio\\LPrestamo.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LPrestamo.cs",
-              "RelativeToolTip": "Negocio\\LPrestamo.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAuwEwAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:06:11.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LEditorial.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LEditorial.cs",
-              "RelativeDocumentMoniker": "Negocio\\LEditorial.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LEditorial.cs",
-              "RelativeToolTip": "Negocio\\LEditorial.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwE4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:05:39.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LLibro.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LLibro.cs",
-              "RelativeDocumentMoniker": "Negocio\\LLibro.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LLibro.cs",
-              "RelativeToolTip": "Negocio\\LLibro.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAqwGYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T18:04:17.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LAutor.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LAutor.cs",
-              "RelativeDocumentMoniker": "Negocio\\LAutor.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Negocio\\LAutor.cs",
-              "RelativeToolTip": "Negocio\\LAutor.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwDoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T00:22:42.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "Servicio\\App_Start\\WebApiConfig.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "Servicio\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T22:24:44.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Web.config",
-              "RelativeDocumentMoniker": "Servicio\\Web.config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Servicio\\Web.config",
-              "RelativeToolTip": "Servicio\\Web.config",
-              "ViewState": "AQIAACIAAAAAAAAAAAAEwDkAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T22:25:29.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "App.Config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\App.Config",
-              "RelativeDocumentMoniker": "Data\\App.Config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\App.Config",
-              "RelativeToolTip": "Data\\App.Config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T17:09:46.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\packages.config",
-              "RelativeDocumentMoniker": "Data\\packages.config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\packages.config",
-              "RelativeToolTip": "Data\\packages.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T17:09:44.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\FRepository.cs",
-              "RelativeDocumentMoniker": "Data\\FRepository.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\FRepository.cs",
-              "RelativeToolTip": "Data\\FRepository.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAswE4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:14:39.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Libro.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Libro.cs",
-              "RelativeDocumentMoniker": "Data\\Libro.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Libro.cs",
-              "RelativeToolTip": "Data\\Libro.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA1wB0AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:06:16.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Usuario.cs",
-              "RelativeDocumentMoniker": "Data\\Usuario.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Usuario.cs",
-              "RelativeToolTip": "Data\\Usuario.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:44:45.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "iRepository.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\iRepository.cs",
-              "RelativeDocumentMoniker": "Data\\iRepository.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\iRepository.cs",
-              "RelativeToolTip": "Data\\iRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:13:23.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\content\\net40\\App.config",
-              "RelativeDocumentMoniker": "Data\\content\\net40\\App.config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\content\\net40\\App.config",
-              "RelativeToolTip": "Data\\content\\net40\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T17:26:51.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\App.config",
-              "RelativeDocumentMoniker": "Test\\App.config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\App.config",
-              "RelativeToolTip": "Test\\App.config",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T17:09:52.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\Program.cs",
-              "RelativeDocumentMoniker": "Test\\Program.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\Program.cs",
-              "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T16:52:35.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RepositoryFactory.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\RepositoryFactory.cs",
-              "RelativeDocumentMoniker": "Data\\RepositoryFactory.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\RepositoryFactory.cs",
-              "RelativeToolTip": "Data\\RepositoryFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:16:20.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\content\\net40\\App.config",
-              "RelativeDocumentMoniker": "Test\\content\\net40\\App.config",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Test\\content\\net40\\App.config",
-              "RelativeToolTip": "Test\\content\\net40\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-15T17:29:53.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Editorial.cs",
-              "DocumentMoniker": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Editorial.cs",
-              "RelativeDocumentMoniker": "Data\\Editorial.cs",
-              "ToolTip": "C:\\Users\\dylan\\source\\repos\\ProyectoU1\\Data\\Editorial.cs",
-              "RelativeToolTip": "Data\\Editorial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:06:15.185Z",
+              "WhenOpened": "2024-06-22T20:36:46.021Z",
               "EditorCaption": ""
             }
           ]
