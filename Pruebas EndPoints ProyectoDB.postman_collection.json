@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "27b13947-a811-4e3d-a71a-170674690259",
+		"name": "Pruebas EndPoints ProyectoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28311961"
+	},
+	"item": [
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "Ver Autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Autor/VerAutor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Autor",
+								"VerAutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aut_nombre\": \"Oscar Wilde\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Autor/CrearAutor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Autor",
+								"CrearAutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Autor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Autor/BorrarAutor/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Autor",
+								"BorrarAutor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Autor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aut_id\": \"1\",\r\n    \"aut_nombre\": \"Paulo Coelho\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Autor/EditarAutor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Autor",
+								"EditarAutor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Ver Categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Categoria/VerCategorias",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Categoria",
+								"VerCategorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cat_nombre\" : \"Aventuras\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Categoria/CrearCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Categoria",
+								"CrearCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Categoria/BorrarCategoria/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Categoria",
+								"BorrarCategoria",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cat_id\": 4,\r\n    \"cat_nombre\": \"Aventura\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Categoria/EditarCategoria",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Categoria",
+								"EditarCategoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "Ver Editorial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Editorial/VerEditorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Editorial",
+								"VerEditorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Editorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"edi_nombre\" : \"Santillana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Editorial/CrearEditorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Editorial",
+								"CrearEditorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Editorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Editorial/BorrarEditorial/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Editorial",
+								"BorrarEditorial",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Editorial",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"edi_id\": 2,\r\n    \"edi_nombre\": \"Santillana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Editorial/EditarEditorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Editorial",
+								"EditarEditorial"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "Ver Libros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Libro/VerLibros",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Libro",
+								"VerLibros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lib_nombre\" : \"El Alquimista\",\r\n    \"lib_disponible\": false,\r\n    \"cat_id\": 1,\r\n    \"edi_id\": 1,\r\n    \"aut_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Libro/CrearLibro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Libro",
+								"CrearLibro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Libro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Libro/BorrarLibro/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Libro",
+								"BorrarLibro",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Libro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lib_id\": 3,\r\n    \"lib_nombre\": \"El Metalero\",\r\n    \"lib_disponible\": false,\r\n    \"cat_id\": 1,\r\n    \"edi_id\": 1,\r\n    \"aut_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Libro/EditarLibro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Libro",
+								"EditarLibro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Ver Usuarios",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usu_cedula\": \"1723653976\",\r\n    \"usu_nombre\": \"Dylan\",\r\n    \"usu_apellido\": \"Tipan\",\r\n    \"usu_usuario\": \"djtipan2\",\r\n    \"usu_contrasenia\": \"Abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Usuario/CrearUsuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Usuario",
+								"CrearUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Usuario/BorrarUsuario/1723653976",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Usuario",
+								"BorrarUsuario",
+								"1723653976"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usu_cedula\": 1723653976,\r\n    \"usu_nombre\": \"Joan\",\r\n    \"usu_apellido\": \"Morales\",\r\n    \"usu_usuario\": \"djtipan2\",\r\n    \"usu_contrasenia\": \"Abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Usuario/EditarUsuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Usuario",
+								"EditarUsuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prestamo",
+			"item": [
+				{
+					"name": "Ver Prestamos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Prestamo/VerPrestamos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Prestamo",
+								"VerPrestamos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Prestamo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pre_fecha_inicio\": \"2024-06-23\",\r\n    \"pre_fecha_final\": \"2024-07-17\",\r\n    \"lib_id\": 1,\r\n    \"usu_cedula\": 1723653976\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Prestamo/CrearPrestamo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Prestamo",
+								"CrearPrestamo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Prestamo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44316/api/Prestamo/BorrarPrestamo/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Prestamo",
+								"BorrarPrestamo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Prestamo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pre_id\": 1,\r\n    \"pre_fecha_inicio\": \"2024-06-23\",\r\n    \"pre_fecha_final\": \"2024-07-17\",\r\n    \"lib_id\": 1,\r\n    \"usu_cedula\": 1723653976\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44316/api/Prestamo/EditarPrestamo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44316",
+							"path": [
+								"api",
+								"Prestamo",
+								"EditarPrestamo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
