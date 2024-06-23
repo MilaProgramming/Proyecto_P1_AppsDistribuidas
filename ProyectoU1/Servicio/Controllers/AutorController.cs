@@ -17,6 +17,7 @@ namespace Servicio.Controllers
 
             return autor;
         }
+        [HttpPut]
         public Autor EditarAutor(Autor _autor)
         {
             var negocio = new Negocio.LAutor();
@@ -25,10 +26,11 @@ namespace Servicio.Controllers
             return null;
         }
 
-        public Autor BorrarAutor(Autor _autor)
+        [HttpDelete]
+        public Autor BorrarAutor(int id)
         {
             var negocio = new Negocio.LAutor();
-            var autor = negocio.Delete(_autor.aut_id);
+            var autor = negocio.Delete(id);
 
             return null;
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -97,17 +98,45 @@ namespace Data
 
         public bool Update<TEntity>(TEntity toUpdate) where TEntity : class
         {
-            bool Result = false;
+            bool result = false;
             try
             {
-                dbContext.Entry<TEntity>(toUpdate).State = EntityState.Modified;
-                Result = dbContext.SaveChanges() > 0;
+                var entry = dbContext.Entry(toUpdate);
+                if (entry.State == EntityState.Detached)
+                {
+                    var existingEntity = dbContext.Set<TEntity>().Find(GetKeyValues(toUpdate));
+                    if (existingEntity != null)
+                    {
+                        dbContext.Entry(existingEntity).CurrentValues.SetValues(toUpdate);
+                        result = dbContext.SaveChanges() > 0;
+                    }
+                    else
+                    {
+                        dbContext.Entry(toUpdate).State = EntityState.Modified;
+                        result = dbContext.SaveChanges() > 0;
+                    }
+                }
+                else
+                {
+                    // If the entity is already being tracked, just save changes
+                    result = dbContext.SaveChanges() > 0;
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                throw new ApplicationException("Error updating entity", ex);
             }
-            return Result;
+            return result;
+        }
+
+        // Helper method to get the primary key values of an entity
+        private object[] GetKeyValues<TEntity>(TEntity entity) where TEntity : class
+        {
+            var objectContext = ((IObjectContextAdapter)dbContext).ObjectContext;
+            var objectSet = objectContext.CreateObjectSet<TEntity>();
+            var entityKey = objectSet.EntitySet.ElementType.KeyMembers[0];
+            var property = entity.GetType().GetProperty(entityKey.Name);
+            return new object[] { property.GetValue(entity) };
         }
     }
 }

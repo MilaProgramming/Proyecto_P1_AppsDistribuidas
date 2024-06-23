@@ -88,5 +88,27 @@ namespace GUI_V_2
         {
             btnlogoInicio_Click(null,e);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Detalles());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Prestamo());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del formulario Login
+            Login loginForm = new Login();
+
+            // Mostrar el formulario Login
+            loginForm.Show();
+
+            // Cerrar solo el formulario actual
+            this.Hide(); // Opcionalmente, puedes usar this.Close() si deseas cerrar completamente el formulario actual
+        }
     }
 }

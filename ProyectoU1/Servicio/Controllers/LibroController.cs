@@ -18,14 +18,15 @@ namespace Servicio.Controllers
 
             return libro;
         }
-
-        public Libro BorrarLibro(Libro _libro)
+        [HttpDelete]
+        public Libro BorrarLibro(int id)
         {
             var negocio = new Negocio.LLibro();
-            var producto = negocio.Delete(_libro.lib_id);
+            var producto = negocio.Delete(id);
 
             return null;
         }
+        [HttpPut]
         public Libro EditarLibro(Libro _libro)
         {
             var negocio = new Negocio.LLibro();

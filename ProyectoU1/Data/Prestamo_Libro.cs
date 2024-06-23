@@ -9,6 +9,7 @@
 
 namespace Data
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -19,8 +20,9 @@ namespace Data
         public Nullable<System.DateTime> pre_fecha_final { get; set; }
         public Nullable<int> lib_id { get; set; }
         public Nullable<int> usu_cedula { get; set; }
-    
+        [JsonIgnore]
         public virtual Libro Libro { get; set; }
+        [JsonIgnore]
         public virtual Usuario Usuario { get; set; }
     }
 }

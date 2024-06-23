@@ -17,7 +17,7 @@ namespace Servicio.Controllers
 
             return editorial;
         }
-
+        [HttpPut]
         public Editorial EditarEditorial(Editorial _editorial)
         {
             var negocio = new Negocio.LEditorial();
@@ -25,11 +25,11 @@ namespace Servicio.Controllers
 
             return null;
         }
-
-        public Editorial BorrarEditorial(Editorial _editorial)
+        [HttpDelete]
+        public Editorial BorrarEditorial(int id)
         {
-            var negocio = new Negocio.LCategoria();
-            var categoria = negocio.Delete(_editorial.edi_id);
+            var negocio = new Negocio.LEditorial();
+            var editorial = negocio.Delete(id);
 
             return null;
         }

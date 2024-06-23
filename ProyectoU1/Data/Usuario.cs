@@ -9,6 +9,7 @@
 
 namespace Data
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -25,7 +26,7 @@ namespace Data
         public string usu_apellido { get; set; }
         public string usu_usuario { get; set; }
         public string usu_contrasenia { get; set; }
-    
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Prestamo_Libro> Prestamo_Libro { get; set; }
     }

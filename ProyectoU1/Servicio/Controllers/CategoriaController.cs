@@ -17,7 +17,7 @@ namespace Servicio.Controllers
 
             return categoria;
         }
-
+        [HttpPut]
         public Categoria EditarCategoria(Categoria _categoria)
         {
             var negocio = new Negocio.LCategoria();
@@ -25,11 +25,11 @@ namespace Servicio.Controllers
 
             return null;
         }
-
-        public Categoria BorrarCategoria(Categoria _categoria)
+        [HttpDelete]
+        public Categoria BorrarCategoria(int id)
         {
             var negocio = new Negocio.LCategoria();
-            var categoria = negocio.Delete(_categoria.cat_id);
+            var categoria = negocio.Delete(id);
 
             return null;
         }

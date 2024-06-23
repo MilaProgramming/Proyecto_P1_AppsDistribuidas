@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\bin\Debug\GUI_V_2.exe.config
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\bin\Debug\GUI_V_2.exe
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\bin\Debug\GUI_V_2.pdb
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Form1.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.InicioResumen.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Productos.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.exe
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.pdb
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Detalles.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Prestamo.resources
+C:\Users\Usuario\Desktop\Proyecto_P1_AppsDistribuidas\ProyectoU1\Presentation\obj\Debug\GUI_V_2.Login.resources

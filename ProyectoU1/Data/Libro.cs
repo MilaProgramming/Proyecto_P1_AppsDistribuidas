@@ -9,6 +9,7 @@
 
 namespace Data
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -26,10 +27,13 @@ namespace Data
         public Nullable<int> cat_id { get; set; }
         public Nullable<int> edi_id { get; set; }
         public Nullable<int> aut_id { get; set; }
-    
+        [JsonIgnore]
         public virtual Autor Autor { get; set; }
+        [JsonIgnore]
         public virtual Categoria Categoria { get; set; }
+        [JsonIgnore]
         public virtual Editorial Editorial { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Prestamo_Libro> Prestamo_Libro { get; set; }
     }
