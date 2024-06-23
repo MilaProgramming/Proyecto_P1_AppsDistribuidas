@@ -1,0 +1,15 @@
+C:\Users\dylan\source\repos\ProyectoU1\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\dylan\source\repos\ProyectoU1\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Test.exe.config
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Test.exe
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Test.pdb
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Data.dll
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\EntityFramework.dll
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Data.pdb
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\Data.dll.config
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\EntityFramework.xml
+C:\Users\dylan\source\repos\ProyectoU1\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dylan\source\repos\ProyectoU1\Test\obj\Debug\Test.csproj.Up2Date
+C:\Users\dylan\source\repos\ProyectoU1\Test\obj\Debug\Test.exe
+C:\Users\dylan\source\repos\ProyectoU1\Test\obj\Debug\Test.pdb

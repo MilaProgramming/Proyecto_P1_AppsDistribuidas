@@ -1,0 +1,14 @@
+C:\Users\dylan\source\repos\ProyectoU1\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\dylan\source\repos\ProyectoU1\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\Data.dll.config
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\Data.dll
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\Data.pdb
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\EntityFramework.dll
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\EntityFramework.xml
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dylan\source\repos\ProyectoU1\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dylan\source\repos\ProyectoU1\Data\obj\Debug\Data.csproj.Up2Date
+C:\Users\dylan\source\repos\ProyectoU1\Data\obj\Debug\Data.dll
+C:\Users\dylan\source\repos\ProyectoU1\Data\obj\Debug\Data.pdb

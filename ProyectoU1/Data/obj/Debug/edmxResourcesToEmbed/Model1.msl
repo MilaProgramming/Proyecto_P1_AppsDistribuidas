@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProyectoDBModelStoreContainer" CdmEntityContainer="ProyectoDBEntities">
+    <EntitySetMapping Name="Autor">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Autor">
+        <MappingFragment StoreEntitySet="Autor">
+          <ScalarProperty Name="aut_id" ColumnName="aut_id" />
+          <ScalarProperty Name="aut_nombre" ColumnName="aut_nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categoria">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Categoria">
+        <MappingFragment StoreEntitySet="Categoria">
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="cat_nombre" ColumnName="cat_nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Editorial">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Editorial">
+        <MappingFragment StoreEntitySet="Editorial">
+          <ScalarProperty Name="edi_id" ColumnName="edi_id" />
+          <ScalarProperty Name="edi_nombre" ColumnName="edi_nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Libro">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Libro">
+        <MappingFragment StoreEntitySet="Libro">
+          <ScalarProperty Name="lib_id" ColumnName="lib_id" />
+          <ScalarProperty Name="lib_nombre" ColumnName="lib_nombre" />
+          <ScalarProperty Name="lib_disponible" ColumnName="lib_disponible" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="edi_id" ColumnName="edi_id" />
+          <ScalarProperty Name="aut_id" ColumnName="aut_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prestamo_Libro">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Prestamo_Libro">
+        <MappingFragment StoreEntitySet="Prestamo_Libro">
+          <ScalarProperty Name="pre_id" ColumnName="pre_id" />
+          <ScalarProperty Name="pre_fecha_inicio" ColumnName="pre_fecha_inicio" />
+          <ScalarProperty Name="pre_fecha_final" ColumnName="pre_fecha_final" />
+          <ScalarProperty Name="lib_id" ColumnName="lib_id" />
+          <ScalarProperty Name="usu_cedula" ColumnName="usu_cedula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="ProyectoDBModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="usu_contrasenia" ColumnName="usu_contrasenia" />
+          <ScalarProperty Name="usu_usuario" ColumnName="usu_usuario" />
+          <ScalarProperty Name="usu_cedula" ColumnName="usu_cedula" />
+          <ScalarProperty Name="usu_nombre" ColumnName="usu_nombre" />
+          <ScalarProperty Name="usu_apellido" ColumnName="usu_apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
