@@ -1,0 +1,25 @@
+.footer {
+  background: #2f3e46; /* Dark gray-blue background */
+  color: #fff;
+  padding: 1rem;
+  position: fixed; /* Fixed positioning to stick at the bottom */
+  bottom: 0;
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Ensure main content pushes footer to the bottom */
+.main-content {
+  flex: 1; /* Flex to fill remaining height */
+  margin-bottom: 60px; /* Height of the footer */
+  /* Adjust margin-bottom to match the height of your footer */
+}

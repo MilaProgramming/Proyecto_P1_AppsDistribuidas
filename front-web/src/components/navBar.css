@@ -1,0 +1,117 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f3e46; /* Dark gray-blue background */
+  color: #fff;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.name-logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e1e5ea; /* Light gray-blue color for text */
+}
+
+.nav-logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #2f3e46;
+  padding: 1rem;
+  /* Place space between elements */
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  background: #e1e5ea; /* Light gray-blue underline */
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.nav-link:hover::after{
+  width: 90%;
+  right: 0;
+}
+
+.nav-link span {
+  margin-left: 0.5rem;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+}
+
+.nav-user:hover {
+  color: #e1e5ea; /* Light gray-blue color for text */
+  /* clickable */
+  cursor: pointer;
+}
+
+.nav-user span {
+  margin-left: 0.5rem;
+}
+
+.hamburger {
+  display: none;
+  width: 50px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
