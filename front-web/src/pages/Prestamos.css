@@ -1,0 +1,46 @@
+/* Prestamos.css */
+.user-borrowed-books-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .libros-prestados {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #2f3e46; /* Dark gray-blue background */
+    border-radius: 20px;
+  }
+  
+  .search-icon {
+    color: #fff; /* White color for the icon */
+    margin-right: 0.5rem;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    flex: 1;
+    border-radius: 20px;
+  }
+  
+  .search-bar input::placeholder {
+    color: #fff; /* White color for placeholder text */
+  }
+  
+  .cards-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

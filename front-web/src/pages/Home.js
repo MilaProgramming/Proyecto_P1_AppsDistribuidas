@@ -5,6 +5,8 @@ import Icon1 from "../assets/1.png";
 import Icon2 from "../assets/2.png";
 import Footer from "../components/footer.js";
 import Login from "./Login.js";
+import Libros from "./Libros.js";
+import Prestamo from "./Prestamos.js";
 
 const Home = () => {
     return (
@@ -22,8 +24,13 @@ const Home = () => {
                     </p>
                 </div>
             </div> */}
-            <Login />
-            {/* <Footer /> */}
+            {/* <Login /> */}
+            
+            {/* <Libros /> */}
+
+            <Prestamo userId={101} />
+
+            <Footer />
         </div>
     );
 };

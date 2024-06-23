@@ -1,0 +1,49 @@
+/* Card.css */
+.card {
+    background: #2f3e46; /* Dark gray-blue background */
+    color: #e1e5ea; /* Light gray-blue color for text */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e5ea;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card p {
+    margin: 0.2rem 0;
+  }
+  
+  .pedir-button {
+    background-color: black; /* Dark gray-blue background */
+    color: #e1e5ea; /* Light gray-blue color for text */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .pedir-button:hover {
+    background-color: #1d262a; /* Slightly darker shade for hover effect */
+  }
