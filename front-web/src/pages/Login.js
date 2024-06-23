@@ -48,11 +48,11 @@ const Login = () => {
     <div className="login-container">
       <div className="login-content">
         <div className="auth-form-container">
-          <h2>{isLogin ? 'Login' : 'Register'}</h2>
+          <h2>{isLogin ? 'Login' : 'Registro'}</h2>
           <form className="auth-form" onSubmit={handleSubmit}>
             {!isLogin && (
               <>
-                <label htmlFor="usu_cedula">ID</label>
+                <label htmlFor="usu_cedula">Cédula</label>
                 <input
                   type="number"
                   id="usu_cedula"
@@ -62,7 +62,7 @@ const Login = () => {
                   required
                 />
 
-                <label htmlFor="usu_nombre">First Name</label>
+                <label htmlFor="usu_nombre">Nombre</label>
                 <input
                   type="text"
                   id="usu_nombre"
@@ -72,7 +72,7 @@ const Login = () => {
                   required
                 />
 
-                <label htmlFor="usu_apellido">Last Name</label>
+                <label htmlFor="usu_apellido">Apellido</label>
                 <input
                   type="text"
                   id="usu_apellido"
@@ -94,7 +94,7 @@ const Login = () => {
               required
             />
 
-            <label htmlFor="usu_contrasenia">Password</label>
+            <label htmlFor="usu_contrasenia">Contraseña</label>
             <input
               type="password"
               id="usu_contrasenia"
@@ -105,14 +105,14 @@ const Login = () => {
             />
 
             <button type="submit" className="auth-button">
-              {isLogin ? 'Login' : 'Register'}
+              {isLogin ? 'Login' : 'Registro'}
             </button>
           </form>
 
           <p className="toggle-form" onClick={handleToggleForm}>
             {isLogin
-              ? "Don't have an account? Register here."
-              : 'Already have an account? Login here.'}
+              ? "¿No tienes cuenta? Registrate."
+              : '¿Ya tienes una cuenta? Ve al Login.'}
           </p>
         </div>
       </div>
