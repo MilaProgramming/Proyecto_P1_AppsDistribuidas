@@ -17,7 +17,7 @@ namespace Servicio.Controllers
 
             return prestamo;
         }
-
+        [HttpPut]
         public Prestamo_Libro EditarPrestamo(Prestamo_Libro _prestamo)
         {
             var negocio = new Negocio.LPrestamo();
@@ -25,11 +25,11 @@ namespace Servicio.Controllers
 
             return null;
         }
-
-        public Prestamo_Libro BorrarPrestamo(Prestamo_Libro _prestamo)
+        [HttpDelete]
+        public Prestamo_Libro BorrarPrestamo(int id)
         {
             var negocio = new Negocio.LPrestamo();
-            var prestamo = negocio.Delete(_prestamo.pre_id);
+            var prestamo = negocio.Delete(id);
 
             return null;
         }

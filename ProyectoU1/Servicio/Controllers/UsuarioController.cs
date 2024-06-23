@@ -17,7 +17,7 @@ namespace Servicio.Controllers
 
             return usuario;
         }
-
+        [HttpPut]
         public Usuario EditarUsuario(Usuario _usuario)
         {
             var negocio = new Negocio.LUsuario();
@@ -25,11 +25,11 @@ namespace Servicio.Controllers
 
             return null;
         }
-
-        public Usuario BorrarUsuario(Usuario _usuario)
+        [HttpDelete]
+        public Usuario BorrarUsuario(int id)
         {
             var negocio = new Negocio.LUsuario();
-            var usuario = negocio.Delete(_usuario.usu_cedula);
+            var usuario = negocio.Delete(id);
 
             return null;
         }
