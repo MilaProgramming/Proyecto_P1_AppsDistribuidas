@@ -1,119 +1,147 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './Login.css';
+import { UserContext } from '../components/userContext';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [usu_cedula, setUsuCedula] = useState('');
   const [usu_usuario, setUsuUsuario] = useState('');
   const [usu_contrasenia, setUsuContrasenia] = useState('');
-  const [usu_nombre, setUsuNombre] = useState(''); // For registration only
-  const [usu_apellido, setUsuApellido] = useState(''); // For registration only
+  const [usu_nombre, setUsuNombre] = useState('');
+  const [usu_apellido, setUsuApellido] = useState('');
+  const [error, setError] = useState('');
+  const [users, setUsers] = useState([]);
+  const { setUser } = useContext(UserContext);
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const response = await fetch('https://localhost:44316/api/Usuario/VerUsuarios');
+        if (response.ok) {
+          const data = await response.json();
+          setUsers(data);
+        } else {
+          console.error('Failed to fetch user data');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
 
   const handleToggleForm = () => {
     setIsLogin(!isLogin);
+    setError('');
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
 
-    // Prepare data based on login or register form
-    const formData = isLogin
-      ? { usu_usuario, usu_contrasenia }
-      : { usu_cedula, usu_nombre, usu_apellido, usu_usuario, usu_contrasenia };
-
-    try {
-      const url = isLogin ? '/login' : '/register';
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        // Handle successful login or registration
-        const data = await response.json();
-        console.log(data); // Assuming backend sends back user data or token
+    if (isLogin) {
+      const user = users.find(user => user.usu_usuario === usu_usuario && user.usu_contrasenia === usu_contrasenia);
+      if (user) {
+        setUser(user);
+        console.log('Login successful', user);
       } else {
-        // Handle error
-        console.error('Login or registration failed');
+        setError('Username or password is incorrect');
       }
-    } catch (error) {
-      console.error('Error:', error);
+    } else {
+      const userExists = users.some(user => user.usu_cedula === usu_cedula);
+      if (userExists) {
+        setError('User with this ID already exists');
+      } else {
+        const formData = { usu_cedula, usu_nombre, usu_apellido, usu_usuario, usu_contrasenia };
+        try {
+          const response = await fetch('https://localhost:44316/api/Usuario/CrearUsuario', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            setUser(data);
+            console.log('Registration successful', data);
+          } else {
+            console.error('Registration failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      }
     }
   };
 
   return (
-    <div className="login-container">
-      <div className="login-content">
-        <div className="auth-form-container">
-          <h2>{isLogin ? 'Login' : 'Registro'}</h2>
-          <form className="auth-form" onSubmit={handleSubmit}>
-            {!isLogin && (
-              <>
-                <label htmlFor="usu_cedula">Cédula</label>
-                <input
-                  type="number"
-                  id="usu_cedula"
-                  name="usu_cedula"
-                  value={usu_cedula}
-                  onChange={(e) => setUsuCedula(e.target.value)}
-                  required
-                />
-
-                <label htmlFor="usu_nombre">Nombre</label>
-                <input
-                  type="text"
-                  id="usu_nombre"
-                  name="usu_nombre"
-                  value={usu_nombre}
-                  onChange={(e) => setUsuNombre(e.target.value)}
-                  required
-                />
-
-                <label htmlFor="usu_apellido">Apellido</label>
-                <input
-                  type="text"
-                  id="usu_apellido"
-                  name="usu_apellido"
-                  value={usu_apellido}
-                  onChange={(e) => setUsuApellido(e.target.value)}
-                  required
-                />
-              </>
-            )}
-
-            <label htmlFor="usu_usuario">Username</label>
-            <input
-              type="text"
-              id="usu_usuario"
-              name="usu_usuario"
-              value={usu_usuario}
-              onChange={(e) => setUsuUsuario(e.target.value)}
-              required
-            />
-
-            <label htmlFor="usu_contrasenia">Contraseña</label>
-            <input
-              type="password"
-              id="usu_contrasenia"
-              name="usu_contrasenia"
-              value={usu_contrasenia}
-              onChange={(e) => setUsuContrasenia(e.target.value)}
-              required
-            />
-
-            <button type="submit" className="auth-button">
-              {isLogin ? 'Login' : 'Registro'}
-            </button>
-          </form>
-
-          <p className="toggle-form" onClick={handleToggleForm}>
-            {isLogin
-              ? "¿No tienes cuenta? Registrate."
-              : '¿Ya tienes una cuenta? Ve al Login.'}
-          </p>
+    <div>
+      <div className="login-container">
+        <div className="login-content">
+          <div className="auth-form-container">
+            <h2>{isLogin ? 'Login' : 'Registro'}</h2>
+            <form className="auth-form" onSubmit={handleSubmit}>
+              {!isLogin && (
+                <>
+                  <label htmlFor="usu_cedula">Cédula</label>
+                  <input
+                    type="number"
+                    id="usu_cedula"
+                    name="usu_cedula"
+                    value={usu_cedula}
+                    onChange={(e) => setUsuCedula(e.target.value)}
+                    required
+                  />
+                  <label htmlFor="usu_nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="usu_nombre"
+                    name="usu_nombre"
+                    value={usu_nombre}
+                    onChange={(e) => setUsuNombre(e.target.value)}
+                    required
+                  />
+                  <label htmlFor="usu_apellido">Apellido</label>
+                  <input
+                    type="text"
+                    id="usu_apellido"
+                    name="usu_apellido"
+                    value={usu_apellido}
+                    onChange={(e) => setUsuApellido(e.target.value)}
+                    required
+                  />
+                </>
+              )}
+              <label htmlFor="usu_usuario">Username</label>
+              <input
+                type="text"
+                id="usu_usuario"
+                name="usu_usuario"
+                value={usu_usuario}
+                onChange={(e) => setUsuUsuario(e.target.value)}
+                required
+              />
+              <label htmlFor="usu_contrasenia">Contraseña</label>
+              <input
+                type="password"
+                id="usu_contrasenia"
+                name="usu_contrasenia"
+                value={usu_contrasenia}
+                onChange={(e) => setUsuContrasenia(e.target.value)}
+                required
+              />
+              <button type="submit" className="auth-button">
+                {isLogin ? 'Login' : 'Registro'}
+              </button>
+            </form>
+            {error && <p className="error-message">{error}</p>}
+            <p className="toggle-form" onClick={handleToggleForm}>
+              {isLogin ? "¿No tienes cuenta? Registrate." : '¿Ya tienes una cuenta? Ve al Login.'}
+            </p>
+          </div>
         </div>
       </div>
     </div>
