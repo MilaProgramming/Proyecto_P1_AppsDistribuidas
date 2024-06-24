@@ -27,8 +27,8 @@ const Prestamo = ({ userId }) => {
   return (
     <div className="user-borrowed-books-container">
       <h1 className="libros-prestados">Libros Prestados</h1>
-      <div className="search-bar">
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+      <div className="search-bar-p">
+        <FontAwesomeIcon icon={faSearch} className="search-icon-p" />
         <input
           type="text"
           placeholder="Busca un libro..."

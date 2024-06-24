@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate instead of useHistory
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
@@ -9,10 +9,19 @@ import { UserContext } from './userContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user } = useContext(UserContext);
+  const { user, logout } = useContext(UserContext); // Destructure logout from UserContext
+
+  const navigate = useNavigate(); // Use useNavigate instead of useHistory
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleUserClick = () => {
+    if (user) {
+      logout(); // Call logout function provided by UserContext
+      navigate('/'); // Redirect to home after logout using navigate
+    }
   };
 
   return (
@@ -26,11 +35,15 @@ const Navbar = () => {
           <FontAwesomeIcon icon="fas fa-home" />
           <span>Inicio</span>
         </Link>
-        <Link className="nav-link" to="/">
+        <Link className="nav-link" to="/libros">
           <FontAwesomeIcon icon={faQuestionCircle} />
           <span>Pedir libro</span>
         </Link>
-        <div className="nav-user">
+        <Link className="nav-link" to="/pedidos">
+          <FontAwesomeIcon icon={faQuestionCircle} />
+          <span>Mis libros</span>
+        </Link>
+        <div className="nav-user" onClick={handleUserClick}>
           {user ? (
             <>
               <FontAwesomeIcon icon={faUser} />

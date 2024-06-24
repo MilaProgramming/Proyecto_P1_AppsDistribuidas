@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './Login.css';
 import { UserContext } from '../components/userContext';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -12,6 +13,7 @@ const Login = () => {
   const [error, setError] = useState('');
   const [users, setUsers] = useState([]);
   const { setUser } = useContext(UserContext);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -44,6 +46,7 @@ const Login = () => {
       const user = users.find(user => user.usu_usuario === usu_usuario && user.usu_contrasenia === usu_contrasenia);
       if (user) {
         setUser(user);
+        navigate('/libros'); // Redirect to /libros on successful login
         console.log('Login successful', user);
       } else {
         setError('Username or password is incorrect');
@@ -66,6 +69,7 @@ const Login = () => {
           if (response.ok) {
             const data = await response.json();
             setUser(data);
+            navigate('/libros'); // Redirect to /libros on successful registration
             console.log('Registration successful', data);
           } else {
             console.error('Registration failed');

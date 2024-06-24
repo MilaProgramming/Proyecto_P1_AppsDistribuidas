@@ -11,7 +11,7 @@
     margin-bottom: 1rem;
   }
   
-  .search-bar {
+  .search-bar-p {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -20,12 +20,12 @@
     border-radius: 20px;
   }
   
-  .search-icon {
+  .search-icon-p{
     color: #fff; /* White color for the icon */
     margin-right: 0.5rem;
   }
   
-  .search-bar input {
+  .search-bar-p input {
     border: none;
     outline: none;
     padding: 0.5rem;
@@ -33,7 +33,7 @@
     border-radius: 20px;
   }
   
-  .search-bar input::placeholder {
+  .search-bar-p input::placeholder {
     color: #fff; /* White color for placeholder text */
   }
   
