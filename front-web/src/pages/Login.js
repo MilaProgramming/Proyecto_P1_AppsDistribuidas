@@ -1,3 +1,4 @@
+// Login.js
 import React, { useState, useEffect, useContext } from 'react';
 import './Login.css';
 import { UserContext } from '../components/userContext';
@@ -45,16 +46,16 @@ const Login = () => {
     if (isLogin) {
       const user = users.find(user => user.usu_usuario === usu_usuario && user.usu_contrasenia === usu_contrasenia);
       if (user) {
-        setUser(user);
+        setUser(user); // Store user details in context
         navigate('/libros'); // Redirect to /libros on successful login
         console.log('Login successful', user);
       } else {
         setError('Username or password is incorrect');
       }
     } else {
-      const userExists = users.some(user => user.usu_cedula === usu_cedula);
-      if (userExists) {
-        setError('User with this ID already exists');
+      const usernameExists = users.some(user => user.usu_usuario === usu_usuario);
+      if (usernameExists) {
+        setError('El nombre de usuario ya está en uso');
       } else {
         const formData = { usu_cedula, usu_nombre, usu_apellido, usu_usuario, usu_contrasenia };
         try {
@@ -68,7 +69,7 @@ const Login = () => {
 
           if (response.ok) {
             const data = await response.json();
-            setUser(data);
+            setUser(data); // Store newly registered user details in context
             navigate('/libros'); // Redirect to /libros on successful registration
             console.log('Registration successful', data);
           } else {
@@ -143,7 +144,7 @@ const Login = () => {
             </form>
             {error && <p className="error-message">{error}</p>}
             <p className="toggle-form" onClick={handleToggleForm}>
-              {isLogin ? "¿No tienes cuenta? Registrate." : '¿Ya tienes una cuenta? Ve al Login.'}
+              {isLogin ? "¿No tienes cuenta? Regístrate." : '¿Ya tienes una cuenta? Ve al Login.'}
             </p>
           </div>
         </div>
