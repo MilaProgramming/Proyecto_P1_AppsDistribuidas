@@ -45,4 +45,13 @@
     margin: 0;
     padding: 1rem;
   }
+
+  .login-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #2f3e46; /* Dark gray-blue background */
+    color: #e1e5ea; /* Light gray-blue color for text */
+  }
   

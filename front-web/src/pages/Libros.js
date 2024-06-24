@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Card from '../components/card'; // Assuming Card component is correctly imported and named
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './Libros.css';
+import { UserContext } from '../components/userContext';
 
 const Libros = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,6 +11,7 @@ const Libros = () => {
   const [categorias, setCategorias] = useState([]);
   const [editoriales, setEditoriales] = useState([]);
   const [autores, setAutores] = useState([]);
+  const { user } = useContext(UserContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -70,38 +72,44 @@ const Libros = () => {
 
   return (
     <div className="libros-container">
-      <div className="search-bar">
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
-        <input
-          type="text"
-          placeholder="Busca un libro..."
-          value={searchTerm}
-          onChange={handleSearchChange}
-        />
-      </div>
-      <h1 className="libros-title">Libros Disponibles</h1>
-      <div className="cards-container">
-        {filteredBooks.length === 0 ? (
-          <p className="no-books-message">No hay nada aquí</p>
-        ) : (
-          filteredBooks.map((book) => {
-            const autor = autores.find(a => a.aut_id === book.aut_id);
-            const categoria = categorias.find(c => c.cat_id === book.cat_id);
-            const editorial = editoriales.find(e => e.edi_id === book.edi_id);
+      { user ? (
+        <>
+                <div className="search-bar">
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+          <input
+            type="text"
+            placeholder="Busca un libro..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+        </div>
+        <h1 className="libros-title">Libros Disponibles</h1>
+        <div className="cards-container">
+          {filteredBooks.length === 0 ? (
+            <p className="no-books-message">No hay nada aquí</p>
+          ) : (
+            filteredBooks.map((book) => {
+              const autor = autores.find(a => a.aut_id === book.aut_id);
+              const categoria = categorias.find(c => c.cat_id === book.cat_id);
+              const editorial = editoriales.find(e => e.edi_id === book.edi_id);
 
-            return (
-              <Card
-                key={book.lib_id}
-                book={book}
-                autor={autor}
-                categoria={categoria}
-                editorial={editorial}
-                isForUser={false}
-              />
-            );
-          })
-        )}
-      </div>
+              return (
+                <Card
+                  key={book.lib_id}
+                  book={book}
+                  autor={autor}
+                  categoria={categoria}
+                  editorial={editorial}
+                  isForUser={false}
+                />
+              );
+            })
+          )}
+        </div>
+        </>
+      ) : (
+        <p className="login-message"> Por favor inicia sesión para ver los libros disponibles</p>
+      )};
     </div>
   );
 };
