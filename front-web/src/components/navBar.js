@@ -34,10 +34,12 @@ const Navbar = () => {
           <FontAwesomeIcon icon="fas fa-home" />
           <span>Inicio</span>
         </Link>
+        {user && (
         <Link className="nav-link" to="/libros">
           <FontAwesomeIcon icon={faQuestionCircle} />
           <span>Pedir libro</span>
         </Link>
+        )}
         {user && (
           <Link className="nav-link" to="/pedidos">
             <FontAwesomeIcon icon={faQuestionCircle} />

@@ -18,7 +18,9 @@ const Libros = () => {
         const librosResponse = await fetch('https://localhost:44316/api/Libro/VerLibros');
         if (librosResponse.ok) {
           const librosData = await librosResponse.json();
-          setBooks(librosData); // Set libros data to state
+          // Filter librosData to only include books with lib_disponible === true
+          const availableBooks = librosData.filter(book => book.lib_disponible);
+          setBooks(availableBooks); // Set libros data to state
         } else {
           console.error('Failed to fetch libros data');
         }
@@ -79,22 +81,26 @@ const Libros = () => {
       </div>
       <h1 className="libros-title">Libros Disponibles</h1>
       <div className="cards-container">
-        {filteredBooks.map((book) => {
-          const autor = autores.find(a => a.aut_id === book.aut_id);
-          const categoria = categorias.find(c => c.cat_id === book.cat_id);
-          const editorial = editoriales.find(e => e.edi_id === book.edi_id);
+        {filteredBooks.length === 0 ? (
+          <p className="no-books-message">No hay nada aquí</p>
+        ) : (
+          filteredBooks.map((book) => {
+            const autor = autores.find(a => a.aut_id === book.aut_id);
+            const categoria = categorias.find(c => c.cat_id === book.cat_id);
+            const editorial = editoriales.find(e => e.edi_id === book.edi_id);
 
-          return (
-            <Card
-              key={book.lib_id}
-              book={book}
-              autor={autor}
-              categoria={categoria}
-              editorial={editorial}
-              isForUser={false}
-            />
-          );
-        })}
+            return (
+              <Card
+                key={book.lib_id}
+                book={book}
+                autor={autor}
+                categoria={categoria}
+                editorial={editorial}
+                isForUser={false}
+              />
+            );
+          })
+        )}
       </div>
     </div>
   );

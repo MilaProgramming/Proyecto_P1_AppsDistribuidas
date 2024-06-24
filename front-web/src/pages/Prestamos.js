@@ -96,23 +96,27 @@ const Prestamos = () => {
         />
       </div>
       <div className="cards-container">
-        {filteredBooks.map((book) => {
-          // Find autor, categoria, and editorial from their respective arrays
-          const autor = autores.find(a => a.aut_id === book.aut_id);
-          const categoria = categorias.find(c => c.cat_id === book.cat_id);
-          const editorial = editoriales.find(e => e.edi_id === book.edi_id);
+        {filteredBooks.length === 0 ? (
+          <p className="no-books-message">No hay libros prestados para mostrar</p>
+        ) : (
+          filteredBooks.map((book) => {
+            // Find autor, categoria, and editorial from their respective arrays
+            const autor = autores.find(a => a.aut_id === book.aut_id);
+            const categoria = categorias.find(c => c.cat_id === book.cat_id);
+            const editorial = editoriales.find(e => e.edi_id === book.edi_id);
 
-          return (
-            <Card
-              key={book.lib_id}
-              book={book}
-              autor={autor}
-              categoria={categoria}
-              editorial={editorial}
-              isForUser={true}
-            />
-          );
-        })}
+            return (
+              <Card
+                key={book.lib_id}
+                book={book}
+                autor={autor}
+                categoria={categoria}
+                editorial={editorial}
+                isForUser={true}
+              />
+            );
+          })
+        )}
       </div>
     </div>
   );

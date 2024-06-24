@@ -1,49 +1,106 @@
 /* Card.css */
 .card {
-    background: #2f3e46; /* Dark gray-blue background */
-    color: #e1e5ea; /* Light gray-blue color for text */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card-icon {
-    font-size: 3rem;
-    margin: 1rem;
-  }
+  background: #2f3e46; /* Dark gray-blue background */
+  color: #e1e5ea; /* Light gray-blue color for text */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure relative positioning for modal */
+}
 
-  .titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e1e5ea;
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-  }
-  
-  .card p {
-    margin: 0.2rem 0;
-  }
-  
-  .pedir-button {
-    background-color: black; /* Dark gray-blue background */
-    color: #e1e5ea; /* Light gray-blue color for text */
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .pedir-button:hover {
-    background-color: #1d262a; /* Slightly darker shade for hover effect */
-  }
+.card-icon {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1e5ea;
+}
+
+.card p {
+  margin: 0.2rem 0;
+}
+
+.pedir-button {
+  background-color: black; /* Dark gray-blue background */
+  color: #e1e5ea; /* Light gray-blue color for text */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.pedir-button:hover {
+  background-color: #1d262a; /* Slightly darker shade for hover effect */
+}
+
+/* Modal Styling */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure modal is on top of everything */
+  color: #000;
+}
+
+.modal-content {
+  background-color: #f0f0f0; /* Light gray background for modal content */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #2f3e46;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+.modal-buttons button:last-child {
+  background-color: #6c757d; /* Bootstrap gray */
+  color: white;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #5a6268; /* Slightly darker gray on hover */
+}

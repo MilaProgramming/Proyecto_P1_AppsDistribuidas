@@ -65,3 +65,9 @@
   color: red;
   margin-top: 1rem;
 }
+
+.no-books-message {
+  text-align: center;
+  margin: 1rem;
+  color: #333; /* Adjust color as needed */
+}
