@@ -13,7 +13,7 @@ const Login = () => {
   const [usu_apellido, setUsuApellido] = useState('');
   const [error, setError] = useState('');
   const [users, setUsers] = useState([]);
-  const { setUser } = useContext(UserContext);
+  const { setUsuario } = useContext(UserContext);
   const navigate = useNavigate(); 
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const Login = () => {
     if (isLogin) {
       const user = users.find(user => user.usu_usuario === usu_usuario && user.usu_contrasenia === usu_contrasenia);
       if (user) {
-        setUser(user); // Store user details in context
+        setUsuario(user); // Store user details in context
         navigate('/libros'); // Redirect to /libros on successful login
         console.log('Login successful', user);
       } else {
@@ -69,7 +69,7 @@ const Login = () => {
 
           if (response.ok) {
             const data = await response.json();
-            setUser(data); // Store newly registered user details in context
+            setUsuario(data); // Store newly registered user details in context
             navigate('/libros'); // Redirect to /libros on successful registration
             console.log('Registration successful', data);
           } else {

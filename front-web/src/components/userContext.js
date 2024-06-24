@@ -8,6 +8,10 @@ const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null); // Assuming user object or null
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track authentication state
 
+  const setUsuario = (userData) => {
+    setUser(userData);
+  }
+
   // Check if user is logged in (you can adjust this logic based on your actual authentication mechanism)
   const checkAuth = () => {
     // Example: Check if user object exists
@@ -31,7 +35,7 @@ const UserProvider = ({ children }) => {
   };
 
   return (
-    <UserContext.Provider value={{ user, isLoggedIn, login, logout, checkAuth }}>
+    <UserContext.Provider value={{ user, isLoggedIn, login, logout, checkAuth, setUsuario }}>
       {children}
     </UserContext.Provider>
   );
