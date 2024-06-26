@@ -35,7 +35,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblusuario = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@
             this.MenuVertical.Controls.Add(this.pictureBox2);
             this.MenuVertical.Controls.Add(this.lblusuario);
             this.MenuVertical.Controls.Add(this.button6);
-            this.MenuVertical.Controls.Add(this.button5);
             this.MenuVertical.Controls.Add(this.button4);
             this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.button2);
@@ -127,7 +125,7 @@
             this.lblusuario.Location = new System.Drawing.Point(96, 734);
             this.lblusuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(128, 26);
+            this.lblusuario.Size = new System.Drawing.Size(102, 21);
             this.lblusuario.TabIndex = 14;
             this.lblusuario.Text = "Bienvenido";
             // 
@@ -140,7 +138,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(1, 657);
+            this.button6.Location = new System.Drawing.Point(0, 98);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(333, 49);
@@ -148,23 +146,6 @@
             this.button6.Text = "Cerra Sesión";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 382);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(333, 49);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Compras";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -180,8 +161,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(333, 49);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Proveedores";
+            this.button4.Text = "Eliminar Detalles";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -387,7 +369,6 @@
         private System.Windows.Forms.PictureBox iconcerrar;
         private System.Windows.Forms.Button btnprod;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

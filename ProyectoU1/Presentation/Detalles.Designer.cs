@@ -29,25 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Detalles));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtNombreAutor = new System.Windows.Forms.TextBox();
-            this.txtIdAutor = new System.Windows.Forms.TextBox();
             this.btnGuardarAutor = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnGuardarEditorial = new System.Windows.Forms.Button();
             this.btnGuardarCategoria = new System.Windows.Forms.Button();
-            this.txtIdEditorial = new System.Windows.Forms.TextBox();
             this.txtNombreEditorial = new System.Windows.Forms.TextBox();
-            this.txtIdCategoria = new System.Windows.Forms.TextBox();
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
             this.TablaProductos = new System.Windows.Forms.DataGridView();
             this.btnVerCategoria = new System.Windows.Forms.Button();
@@ -67,16 +61,6 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Nombre \r\nEditorial";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(59, 399);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 26);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "ID Editorial";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -86,16 +70,6 @@
             this.label5.Size = new System.Drawing.Size(103, 26);
             this.label5.TabIndex = 24;
             this.label5.Text = "Categoria";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 698);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 26);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "ID Categoria";
             // 
             // label3
             // 
@@ -107,16 +81,6 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Nombre\r\nAutor";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 26);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "ID Autor";
-            // 
             // txtNombreAutor
             // 
             this.txtNombreAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,17 +89,8 @@
             this.txtNombreAutor.Name = "txtNombreAutor";
             this.txtNombreAutor.Size = new System.Drawing.Size(259, 28);
             this.txtNombreAutor.TabIndex = 20;
+            this.txtNombreAutor.TextChanged += new System.EventHandler(this.txtNombreAutor_TextChanged);
             this.txtNombreAutor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAutor_KeyPress);
-            // 
-            // txtIdAutor
-            // 
-            this.txtIdAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdAutor.Location = new System.Drawing.Point(196, 96);
-            this.txtIdAutor.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdAutor.Name = "txtIdAutor";
-            this.txtIdAutor.Size = new System.Drawing.Size(259, 28);
-            this.txtIdAutor.TabIndex = 19;
-            this.txtIdAutor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdAutor_KeyPress);
             // 
             // btnGuardarAutor
             // 
@@ -160,7 +115,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(240, 21);
+            this.label1.Location = new System.Drawing.Point(232, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 43);
@@ -171,7 +126,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(210, 323);
+            this.label8.Location = new System.Drawing.Point(210, 370);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(187, 43);
@@ -182,7 +137,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(201, 619);
+            this.label9.Location = new System.Drawing.Point(210, 672);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(203, 43);
@@ -206,6 +161,7 @@
             this.btnGuardarEditorial.TabIndex = 34;
             this.btnGuardarEditorial.Text = "GUARDAR";
             this.btnGuardarEditorial.UseVisualStyleBackColor = false;
+            this.btnGuardarEditorial.Click += new System.EventHandler(this.btnGuardarEditorial_Click);
             // 
             // btnGuardarCategoria
             // 
@@ -224,15 +180,7 @@
             this.btnGuardarCategoria.TabIndex = 35;
             this.btnGuardarCategoria.Text = "GUARDAR";
             this.btnGuardarCategoria.UseVisualStyleBackColor = false;
-            // 
-            // txtIdEditorial
-            // 
-            this.txtIdEditorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdEditorial.Location = new System.Drawing.Point(196, 399);
-            this.txtIdEditorial.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdEditorial.Name = "txtIdEditorial";
-            this.txtIdEditorial.Size = new System.Drawing.Size(259, 28);
-            this.txtIdEditorial.TabIndex = 36;
+            this.btnGuardarCategoria.Click += new System.EventHandler(this.btnGuardarCategoria_Click);
             // 
             // txtNombreEditorial
             // 
@@ -242,15 +190,7 @@
             this.txtNombreEditorial.Name = "txtNombreEditorial";
             this.txtNombreEditorial.Size = new System.Drawing.Size(259, 28);
             this.txtNombreEditorial.TabIndex = 37;
-            // 
-            // txtIdCategoria
-            // 
-            this.txtIdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCategoria.Location = new System.Drawing.Point(196, 696);
-            this.txtIdCategoria.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdCategoria.Name = "txtIdCategoria";
-            this.txtIdCategoria.Size = new System.Drawing.Size(259, 28);
-            this.txtIdCategoria.TabIndex = 38;
+            this.txtNombreEditorial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreEditorial_KeyPress);
             // 
             // txtNombreCategoria
             // 
@@ -260,6 +200,7 @@
             this.txtNombreCategoria.Name = "txtNombreCategoria";
             this.txtNombreCategoria.Size = new System.Drawing.Size(259, 28);
             this.txtNombreCategoria.TabIndex = 39;
+            this.txtNombreCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreCategoria_KeyPress);
             // 
             // TablaProductos
             // 
@@ -270,24 +211,24 @@
             this.TablaProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.TablaProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.TablaProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.TablaProductos.ColumnHeadersHeight = 30;
             this.TablaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle2;
             this.TablaProductos.EnableHeadersVisualStyles = false;
             this.TablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TablaProductos.Location = new System.Drawing.Point(541, 159);
@@ -298,6 +239,7 @@
             this.TablaProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TablaProductos.Size = new System.Drawing.Size(834, 712);
             this.TablaProductos.TabIndex = 40;
+            this.TablaProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaProductos_CellContentClick);
             // 
             // btnVerCategoria
             // 
@@ -316,6 +258,7 @@
             this.btnVerCategoria.TabIndex = 41;
             this.btnVerCategoria.Text = "CATEGORIAS";
             this.btnVerCategoria.UseVisualStyleBackColor = false;
+            this.btnVerCategoria.Click += new System.EventHandler(this.btnVerCategoria_Click);
             // 
             // btnVerAutor
             // 
@@ -334,6 +277,7 @@
             this.btnVerAutor.TabIndex = 42;
             this.btnVerAutor.Text = "AUTORES";
             this.btnVerAutor.UseVisualStyleBackColor = false;
+            this.btnVerAutor.Click += new System.EventHandler(this.btnVerAutor_Click);
             // 
             // btnVerEditorial
             // 
@@ -352,6 +296,7 @@
             this.btnVerEditorial.TabIndex = 43;
             this.btnVerEditorial.Text = "EDITORIALES";
             this.btnVerEditorial.UseVisualStyleBackColor = false;
+            this.btnVerEditorial.Click += new System.EventHandler(this.btnVerEditorial_Click);
             // 
             // label10
             // 
@@ -375,22 +320,16 @@
             this.Controls.Add(this.btnVerCategoria);
             this.Controls.Add(this.TablaProductos);
             this.Controls.Add(this.txtNombreCategoria);
-            this.Controls.Add(this.txtIdCategoria);
             this.Controls.Add(this.txtNombreEditorial);
-            this.Controls.Add(this.txtIdEditorial);
             this.Controls.Add(this.btnGuardarCategoria);
             this.Controls.Add(this.btnGuardarEditorial);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombreAutor);
-            this.Controls.Add(this.txtIdAutor);
             this.Controls.Add(this.btnGuardarAutor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Detalles";
@@ -403,22 +342,16 @@
 
         #endregion
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombreAutor;
-        private System.Windows.Forms.TextBox txtIdAutor;
         private System.Windows.Forms.Button btnGuardarAutor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnGuardarEditorial;
         private System.Windows.Forms.Button btnGuardarCategoria;
-        private System.Windows.Forms.TextBox txtIdEditorial;
         private System.Windows.Forms.TextBox txtNombreEditorial;
-        private System.Windows.Forms.TextBox txtIdCategoria;
         private System.Windows.Forms.TextBox txtNombreCategoria;
         private System.Windows.Forms.DataGridView TablaProductos;
         private System.Windows.Forms.Button btnVerCategoria;

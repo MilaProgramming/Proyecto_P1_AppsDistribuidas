@@ -110,5 +110,15 @@ namespace GUI_V_2
             // Cerrar solo el formulario actual
             this.Hide(); // Opcionalmente, puedes usar this.Close() si deseas cerrar completamente el formulario actual
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new EliminarDetalles());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new ActualizarLibro());
+        }
     }
 }
